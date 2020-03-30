@@ -1,10 +1,14 @@
+import time
+
+
 def n_th_term_of_fibanocci(n):
     if n in (1, 2):
         return 1
     else:
         return n_th_term_of_fibanocci(n-1) + n_th_term_of_fibanocci(n-2)
 
-#Added this comment
+
+# Added this comment
 n = int(input("Enter number of lines: "))
 if n > 0:
     for line in range(1, n+1):
